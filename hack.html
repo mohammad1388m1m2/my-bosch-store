@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هک شدی</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .numbers {
+            font-size: 30px;
+            color: green;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            animation: fall 1s infinite;
+        }
+        @keyframes fall {
+            0% { top: -10%; }
+            100% { top: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>هک شدی!</h1>
+    <div id="numbers"></div>
+
+    <script>
+        function createFallingNumber() {
+            const number = document.createElement('div');
+            number.className = 'numbers';
+            number.innerText = Math.floor(Math.random() * 100);
+            number.style.left = Math.random() * 100 + 'vw'; // موقعیت تصادفی
+            document.body.appendChild(number);
+
+            setTimeout(() => {
+                number.remove();
+            }, 3000); // بعد از 3 ثانیه حذف شود
+        }
+
+        setInterval(createFallingNumber, 500); // هر نیم ثانیه عدد جدید ایجاد شود
+    </script>
+</body>
+</html>

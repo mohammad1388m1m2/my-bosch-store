@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "دستگاه سوراخ‌کاری بوش",
+            "price": 1200000,
+            "image": "https://www.bosch-professional.com/medias/1604-1604B00D1D-1618403-1.png"
+        },
+        {
+            "id": 2,
+            "name": "دستگاه رنده بوش",
+            "price": 1500000,
+            "image": "https://www.bosch-professional.com/medias/1604-1604B00D1C-1618403-1.png"
+        },
+        {
+            "id": 3,
+            "name": "دستگاه فرز بوش",
+            "price": 1800000,
+            "image": "https://www.bosch-professional.com/medias/1604-1604B00D1E-1618403-1.png"
+        },
+        {
+            "id": 4,
+            "name": "دستگاه میخ‌کوب بوش",
+            "price": 2200000,
+            "image": "https://www.bosch-professional.com/medias/1604-1604B00D1F-1618403-1.png"
+        },
+        {
+            "id": 5,
+            "name": "دستگاه سنباده بوش",
+            "price": 1400000,
+            "image": "https://www.bosch-professional.com/medias/1604-1604B00D1G-1618403-1.png"
+        }
+    ]
+}
